@@ -1,0 +1,28 @@
+# ── Raw & derived data (too large for GitHub) ──────────────────────────────
+data/raw/
+data/pair_cache/
+data/processed/relationship_raw.npy
+data/processed/dataset_meta_v2.pkl
+data/processed/corr_video.npy
+
+# ── Model weights (largest is 151 MB, over GitHub's 100 MB hard limit) ──────
+models/*.pt
+
+# ── Large archives in trial1_archive ─────────────────────────────────────────
+*.zip
+
+# ── Generated model outputs ─────────────────────────────────────────────────
+outputs/predictions/
+
+# ── Claude Code session data ─────────────────────────────────────────────────
+.claude/
+
+# ── Python cache ─────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# ── OS noise ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
