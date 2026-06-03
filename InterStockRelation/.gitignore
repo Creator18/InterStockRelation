@@ -4,6 +4,9 @@ data/pair_cache/
 data/processed/relationship_raw.npy
 data/processed/dataset_meta_v2.pkl
 data/processed/corr_video.npy
+data/processed/aux_corr_videos.npy
+data/processed/volume_corr_video.npy
+data/processed/volat_corr_video.npy
 
 # ── Model weights (largest is 151 MB, over GitHub's 100 MB hard limit) ──────
 models/*.pt
