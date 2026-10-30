@@ -29,3 +29,24 @@ __pycache__/
 # ── OS noise ─────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+
+# ── Intraday feature file (114 MB) and run artifacts ────────────────────────
+data/processed/intraday_features.npz
+outputs/trial*/*.pt
+outputs/trial*/*_state.pt
+outputs/trial*/*.lease.json*
+outputs/trial*/*_pred.npy
+outputs/trial*/slurm_*.out
+slurm-*.out
+
+# ── Environments, secrets, logs ─────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+.env.*
+*.log
+
+# ── Private notes (never public) ────────────────────────────────────────────
+PRIVATE_NOTES.md
+private/
