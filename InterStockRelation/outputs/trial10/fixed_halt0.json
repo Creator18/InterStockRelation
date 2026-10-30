@@ -1,0 +1,60 @@
+{
+ "run": "fixed_halt0",
+ "args": {
+  "mode": "fixed",
+  "halting": 0,
+  "ctx": 150,
+  "H": 24,
+  "stride": 3,
+  "dim": 64,
+  "heads": 4,
+  "loops": 5,
+  "epochs": 30,
+  "bs": 16,
+  "lr": 0.0003,
+  "span_cost": 0.02,
+  "kl_w": 0.01,
+  "prior": 0.3,
+  "patience": 6,
+  "seed": 0,
+  "smoke": false,
+  "tag": ""
+ },
+ "epochs_run": 16,
+ "best_val": 1.003082893168353,
+ "corr_mse": {
+  "model": 0.0711599588394165,
+  "persistence": 0.09611119329929352,
+  "historical_ctx": 0.05829308554530144,
+  "longrun": 0.05852189660072327
+ },
+ "corr_dir": {
+  "model": 0.7020929948507036,
+  "mean_reversion_rule": 0.7236118936107768,
+  "historical_ctx": 0.7186233302998756,
+  "model_top25": 0.8737996220657555,
+  "model_top10": 0.9230886455995633,
+  "mean_reversion_top25": 0.9015111010290845,
+  "mean_reversion_top10": 0.9471948395783958
+ },
+ "ret": {
+  "mse_model": 0.561659574508667,
+  "mse_zero": 0.549392580986023,
+  "ic": 0.0060660656046017504,
+  "dir": 0.5079464063001105
+ },
+ "windows": {
+  "mean_bars": 150.0,
+  "p10": 150.0,
+  "p90": 150.0,
+  "corr_with_vol": NaN
+ },
+ "halting": {
+  "mean_depth": 5.0,
+  "corr_with_vol": NaN
+ },
+ "attribution": {
+  "sign_agree_all": 0.5032808779031374,
+  "sign_agree_strong_pairs": 0.505211508003019
+ }
+}

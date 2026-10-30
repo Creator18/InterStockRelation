@@ -1,0 +1,60 @@
+{
+ "run": "learned_halt1",
+ "args": {
+  "mode": "learned",
+  "halting": 1,
+  "ctx": 150,
+  "H": 24,
+  "stride": 3,
+  "dim": 64,
+  "heads": 4,
+  "loops": 5,
+  "epochs": 30,
+  "bs": 16,
+  "lr": 0.0003,
+  "span_cost": 0.02,
+  "kl_w": 0.01,
+  "prior": 0.3,
+  "patience": 6,
+  "seed": 0,
+  "smoke": false,
+  "tag": ""
+ },
+ "epochs_run": 19,
+ "best_val": 1.0082546265930765,
+ "corr_mse": {
+  "model": 0.07217331230640411,
+  "persistence": 0.09611119329929352,
+  "historical_ctx": 0.05829308554530144,
+  "longrun": 0.05852189660072327
+ },
+ "corr_dir": {
+  "model": 0.7019527857167118,
+  "mean_reversion_rule": 0.7236120242907121,
+  "historical_ctx": 0.7186233089666015,
+  "model_top25": 0.8715365873334066,
+  "model_top10": 0.9209528719597259,
+  "mean_reversion_top25": 0.9015111308977564,
+  "mean_reversion_top10": 0.9471947995429736
+ },
+ "ret": {
+  "mse_model": 0.55475252866745,
+  "mse_zero": 0.549392580986023,
+  "ic": 0.010408452100958004,
+  "dir": 0.5092719951537612
+ },
+ "windows": {
+  "mean_bars": 8.955462455749512,
+  "p10": 5.520185947418213,
+  "p90": 13.25051498413086,
+  "corr_with_vol": 0.27260645327806987
+ },
+ "halting": {
+  "mean_depth": 2.207465648651123,
+  "corr_with_vol": 0.6414323841348802
+ },
+ "attribution": {
+  "sign_agree_all": 0.5168703623533979,
+  "sign_agree_strong_pairs": 0.5244642752653705
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "run": "fillin_seed1",
+ "args": {
+  "hist": 12,
+  "dim": 64,
+  "heads": 4,
+  "ctx_layers": 2,
+  "epochs": 40,
+  "bs": 512,
+  "lr": 0.001,
+  "patience": 5,
+  "seed": 1,
+  "test_stride": 4,
+  "smoke": false
+ },
+ "epochs_run": 40,
+ "best_val": 0.5586726243104618,
+ "r2": {
+  "model_mean": 0.30244867435236505,
+  "ridge_mean": 0.31306371172853625,
+  "model_beats_ridge_frac": 0.2736842105263158
+ },
+ "attention_vs_corr": {
+  "spearman_mean": 0.4114373822429498,
+  "top5_overlap_mean": 0.5936842105263158,
+  "spearman_vs_ridge_abs": 0.33606617779864895,
+  "self_weight_mean": 0.013299294217616697
+ },
+ "gradient_sign_agree_with_ridge": 0.6815229563269877,
+ "drift_attention_vs_corr_change": 0.015780769195589583,
+ "examples": {
+  "CANBK": [
+   "BANKBARODA",
+   "PNB",
+   "SBIN",
+   "UNIONBANK",
+   "PFC"
+  ],
+  "TCS": [
+   "INFY",
+   "WIPRO",
+   "HCLTECH",
+   "TECHM",
+   "LTM"
+  ],
+  "TATASTEEL": [
+   "JSWSTEEL",
+   "JINDALSTEL",
+   "HINDALCO",
+   "VEDL",
+   "COALINDIA"
+  ],
+  "HDFCBANK": [
+   "KOTAKBANK",
+   "SBIN",
+   "ICICIBANK",
+   "AXISBANK",
+   "BANKBARODA"
+  ],
+  "RELIANCE": [
+   "BPCL",
+   "TMPV",
+   "SBIN",
+   "TCS",
+   "IOC"
+  ],
+  "SUNPHARMA": [
+   "DRREDDY",
+   "CIPLA",
+   "DIVISLAB",
+   "ZYDUSLIFE",
+   "TORNTPHARM"
+  ]
+ }
+}

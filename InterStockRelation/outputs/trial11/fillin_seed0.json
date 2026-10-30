@@ -1,0 +1,75 @@
+{
+ "run": "fillin_seed0",
+ "args": {
+  "hist": 12,
+  "dim": 64,
+  "heads": 4,
+  "ctx_layers": 2,
+  "epochs": 40,
+  "bs": 512,
+  "lr": 0.001,
+  "patience": 5,
+  "seed": 0,
+  "test_stride": 4,
+  "smoke": false
+ },
+ "epochs_run": 35,
+ "best_val": 0.5670284687862461,
+ "r2": {
+  "model_mean": 0.29197240987695927,
+  "ridge_mean": 0.31306371172853625,
+  "model_beats_ridge_frac": 0.17894736842105263
+ },
+ "attention_vs_corr": {
+  "spearman_mean": 0.24066307081868604,
+  "top5_overlap_mean": 0.5452631578947368,
+  "spearman_vs_ridge_abs": 0.3078828922177205,
+  "self_weight_mean": 0.02189692520675648
+ },
+ "gradient_sign_agree_with_ridge": 0.6764837625979844,
+ "drift_attention_vs_corr_change": 0.04236509057574619,
+ "examples": {
+  "CANBK": [
+   "BANKBARODA",
+   "SBIN",
+   "PNB",
+   "ICICIBANK",
+   "UNIONBANK"
+  ],
+  "TCS": [
+   "INFY",
+   "TECHM",
+   "WIPRO",
+   "HCLTECH",
+   "LTM"
+  ],
+  "TATASTEEL": [
+   "JINDALSTEL",
+   "JSWSTEEL",
+   "VEDL",
+   "HINDALCO",
+   "INFY"
+  ],
+  "HDFCBANK": [
+   "ICICIBANK",
+   "KOTAKBANK",
+   "AXISBANK",
+   "SBIN",
+   "RELIANCE"
+  ],
+  "RELIANCE": [
+   "HDFCBANK",
+   "ICICIBANK",
+   "SBIN",
+   "BPCL",
+   "TCS"
+  ],
+  "SUNPHARMA": [
+   "CIPLA",
+   "DIVISLAB",
+   "DRREDDY",
+   "ZYDUSLIFE",
+   "TORNTPHARM"
+  ]
+ }
+}
