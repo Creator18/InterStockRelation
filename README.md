@@ -3,6 +3,9 @@
 Forecasting how the correlation structure of a stock market changes, by treating the
 full stock-by-stock correlation matrix as a video.
 
+All code, data and results live in `InterStockRelation/`. Paths below are relative to that
+folder, and commands should be run from it.
+
 ## The idea
 
 At each time step, the correlations between 95 Nifty 100 stocks form a 95 x 95 matrix.
